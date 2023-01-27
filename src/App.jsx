@@ -12,13 +12,15 @@ import Inline from "./components/Inline";
 import './appStyles.css';
 import  styles from './appStyles.modules.css?inline'
 import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Form/>
+      <LifecycleA/>
+      {/* <Form/> */}
       {/* <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1> */}
       {/* <Stylesheet primary={true}/> */}
