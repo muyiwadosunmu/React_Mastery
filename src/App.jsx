@@ -16,13 +16,16 @@ import LifecycleA from "./components/LifecycleA";
 import Fragments from "./components/Fragments";
 import Columns from "./components/Columns";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <PureComp />
       {/* <Fragments /> */}
-      <Table />
+      {/* <Table /> */}
       {/* <Columns /> */}
       {/* <LifecycleA/> */}
       {/* <Form/> */}
