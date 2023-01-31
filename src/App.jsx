@@ -18,13 +18,15 @@ import Columns from "./components/Columns";
 import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
+import RefsDemo from "./components/RefsDemo";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <ParentComp />
+      <RefsDemo />
+      {/* <ParentComp /> */}
       {/* <Fragments /> */}
       {/* <Table /> */}
       {/* <Columns /> */}
