@@ -17,13 +17,14 @@ import Fragments from "./components/Fragments";
 import Columns from "./components/Columns";
 import Table from "./components/Table";
 import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <PureComp />
+      <ParentComp />
       {/* <Fragments /> */}
       {/* <Table /> */}
       {/* <Columns /> */}
