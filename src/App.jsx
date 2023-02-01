@@ -16,13 +16,27 @@ import LifecycleA from "./components/LifecycleA";
 import Fragments from "./components/Fragments";
 import Columns from "./components/Columns";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
+import RefsDemo from "./components/RefsDemo";
+import HookCounter from "./Hooks/HookCounter";
+import HookCounter2 from "./Hooks/HookCounter2";
+import HookUseStateObj from "./Hooks/HookUseStateObj";
+import HookUseStateArray from "./Hooks/HookUseStateArray";
+import HookUseEffect from "./Hooks/HookUseEffect";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <HookUseEffect/>
+      {/* <HookUseStateArray/> */}
+      {/* <HookUseStateObj/> */}
+      {/* <RefsDemo /> */}
+      {/* <ParentComp /> */}
       {/* <Fragments /> */}
-      <Table />
+      {/* <Table /> */}
       {/* <Columns /> */}
       {/* <LifecycleA/> */}
       {/* <Form/> */}
