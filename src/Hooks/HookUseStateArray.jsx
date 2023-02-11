@@ -15,9 +15,9 @@ const HookUseStateArray = () => {
     <div>
       <button onClick={addItem}>Add an item</button>
       <ul>
-        {items.map((item) => (
+        {items.map((item) => 
           <l1 key={item.id}>{item.value}</l1>
-        ))}
+          )}
       </ul>
     </div>
   );

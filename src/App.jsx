@@ -19,28 +19,28 @@ import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
-<<<<<<< HEAD
 import HookCounter from "./Hooks/HookCounter";
 import HookCounter2 from "./Hooks/HookCounter2";
 import HookUseStateObj from "./Hooks/HookUseStateObj";
 import HookUseStateArray from "./Hooks/HookUseStateArray";
 import HookUseEffect from "./Hooks/HookUseEffect";
-=======
->>>>>>> 4a81d5cac5b4b4fbfc0ce161c6686c2061acdbe6
+import ClassCounteruseEffect from "./components/ClassCounteruseEffect";
+import CassUseEffectOnce from "./components/CassUseEffectOnce";
+import HookMouse from "./Hooks/HookMouse";
+
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-<<<<<<< HEAD
-      <HookUseEffect/>
-      {/* <HookUseStateArray/> */}
+      <HookMouse/>
+      {/* <ClassCounteruseEffect/> */}
+      {/* <CassUseEffectOnce/> */}
+       {/* <HookUseEffect/> */}
+       {/* { <HookUseStateArray/>} */}
       {/* <HookUseStateObj/> */}
       {/* <RefsDemo /> */}
-=======
-      <RefsDemo />
->>>>>>> 4a81d5cac5b4b4fbfc0ce161c6686c2061acdbe6
       {/* <ParentComp /> */}
       {/* <Fragments /> */}
       {/* <Table /> */}
