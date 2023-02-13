@@ -27,14 +27,19 @@ import HookUseEffect from "./Hooks/HookUseEffect";
 import ClassCounteruseEffect from "./components/ClassCounteruseEffect";
 import CassUseEffectOnce from "./components/CassUseEffectOnce";
 import HookMouse from "./Hooks/HookMouse";
-
+import MouseContforUseEffectCleanUp from "./Hooks/MouseContforUseEffectCleanUp";
+import IntervalClassCounter from "./components/IntervalClassCounter";
+import IntervalHooksCounter from "./Hooks/IntervalHooksCounter";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <HookMouse/>
+      <IntervalClassCounter/>
+      <IntervalHooksCounter/>
+      {/* <MouseContforUseEffectCleanUp/> */}
+      {/* <HookMouse/> */}
       {/* <ClassCounteruseEffect/> */}
       {/* <CassUseEffectOnce/> */}
        {/* <HookUseEffect/> */}
