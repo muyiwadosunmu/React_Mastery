@@ -31,13 +31,14 @@ import MouseContforUseEffectCleanUp from "./Hooks/MouseContforUseEffectCleanUp";
 import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHooksCounter from "./Hooks/IntervalHooksCounter";
 import DataFetching from "./Hooks/DataFetching";
-
+import DataFetchingSinglePost from "./Hooks/DataFetchSinglePost";
 function App() {
   // const [count, setCount] = useState(0); 
 
   return (
     <div className="App">
       <DataFetching/>
+      <DataFetchingSinglePost/>
       {/* <IntervalClassCounter/> */}
       {/* <IntervalHooksCounter/> */}
       {/* <MouseContforUseEffectCleanUp/> */}

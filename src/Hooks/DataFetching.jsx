@@ -17,7 +17,7 @@ const DataFetching = () => {
         }
       }
     }
-   fetchPosts();
+   (fetchPosts());
   },[posts]) 
   return <div>
     <ul>
