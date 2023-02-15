@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Message from "./components/Message";
@@ -32,13 +32,27 @@ import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHooksCounter from "./Hooks/IntervalHooksCounter";
 import DataFetching from "./Hooks/DataFetching";
 import DataFetchingSinglePost from "./Hooks/DataFetchSinglePost";
+// import ComponentC from "../src/Hooks/ContextHooks.jsx/ComponentC";
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
+import UseReducerCounterOne from './Hooks/UseReducerCounterOne'
+import UseReducerCounterTwo from "./Hooks/UseReducerCounterTwo";
+import UseReducerCounterThree from "./Hooks/UseReducerCounterThree";
 function App() {
   // const [count, setCount] = useState(0); 
 
   return (
     <div className="App">
-      <DataFetching/>
-      <DataFetchingSinglePost/>
+      <UseReducerCounterThree/>
+      {/* <UseReducerCounterTwo/> */}
+      {/* <UseReducerCounterOne/> */}
+      {/* <UserContext.Provider value={'Muyiwa'}>
+        <ChannelContext.Provider value={'CodeHub'}>
+          <ComponentC/>
+        </ChannelContext.Provider> */}
+      {/* </UserContext.Provider> */}
+      {/* <DataFetching/> */}
+      {/* <DataFetchingSinglePost/> */}
       {/* <IntervalClassCounter/> */}
       {/* <IntervalHooksCounter/> */}
       {/* <MouseContforUseEffectCleanUp/> */}
