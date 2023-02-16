@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useState, useReducer } from "react";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Message from "./components/Message";
@@ -38,12 +38,41 @@ import DataFetchingSinglePost from "./Hooks/DataFetchSinglePost";
 import UseReducerCounterOne from './Hooks/UseReducerCounterOne'
 import UseReducerCounterTwo from "./Hooks/UseReducerCounterTwo";
 import UseReducerCounterThree from "./Hooks/UseReducerCounterThree";
-function App() {
+import ComponentAforReduContext from "./Hooks/ContextHooks/ComponentAforReduContext";
+import ComponentBforReduContext from "./Hooks/ContextHooks/ComponentBforReduContext";
+import ComponentCforReduContext from "./Hooks/ContextHooks/ComponentCforReduContext";
+// export const CountContext = React.createContext()
+import DataFetchwithUseState from "./Hooks/ContextHooks/DataFetchwithUseState";
+import DataFetcwithUseReducer from "./Hooks/ContextHooks/DataFetcwithUseReducer";
+
+
+const initialState = 0;
+const reducer = (state, action) => {
+  switch(action) {
+    case 'increment':
+      return state + 1;
+    case 'decrement':
+      return state - 1;
+    case 'reset':
+      return initialState;
+    default:
+      return state;
+  }
+}
+function App() { 
   // const [count, setCount] = useState(0); 
+  const [count, dispatch] = useReducer(reducer, initialState)
+
 
   return (
+    // <CountContext.Provider value={{countState:count, countDispatch:dispatch }}>
     <div className="App">
-      <UseReducerCounterThree/>
+      <DataFetchwithUseState/>
+      <DataFetcwithUseReducer/>
+      {/* <ComponentAforReduContext/>
+      <ComponentBforReduContext/>
+      <ComponentCforReduContext/> */}
+      {/* <UseReducerCounterThree/> */}
       {/* <UseReducerCounterTwo/> */}
       {/* <UseReducerCounterOne/> */}
       {/* <UserContext.Provider value={'Muyiwa'}>
@@ -81,6 +110,7 @@ function App() {
       <Greet name="Muyiwa" heroName="backend beast"/> 
       <Welcome name="Muyiwa" heroName="frontend badass" />  */}
     </div>
+    // </CountContext.Provider>
   );
 }
 
