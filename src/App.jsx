@@ -45,6 +45,7 @@ import ComponentCforReduContext from "./Hooks/ContextHooks/ComponentCforReduCont
 import DataFetchwithUseState from "./Hooks/ContextHooks/DataFetchwithUseState";
 import DataFetcwithUseReducer from "./Hooks/ContextHooks/DataFetcwithUseReducer";
 import ParentComponent from "./Hooks/Callbackhook/ParentComponent";
+import CounterForMemo from "./Hooks/MemoHooks/CounterForMemo";
 
 
 const initialState = 0;
@@ -68,7 +69,8 @@ function App() {
   return (
     // <CountContext.Provider value={{countState:count, countDispatch:dispatch }}>
     <div className="App">
-      <ParentComponent/>
+      <CounterForMemo/>
+      {/* <ParentComponent/> */}
       {/* <DataFetchwithUseState/> */}
       {/* <DataFetcwithUseReducer/> */}
       {/* <ComponentAforReduContext/>
